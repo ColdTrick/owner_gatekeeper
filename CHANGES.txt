@@ -1,2 +1,7 @@
 Version history
 ===============
+
+1.0 (2016-09-15):
+
+- added: first workings of the plugin
+- added: initial plugin structure
