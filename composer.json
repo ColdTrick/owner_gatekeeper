@@ -3,7 +3,7 @@
 	"description": "Protect pages owned by a user to have a group relationship",
 	"type": "elgg-plugin",
 	"keywords": ["elgg", "plugin"],
-	"license": "GPL-2.0",
+	"license": "GPL-2.0-only",
 	"support": {
 		"source": "https://github.com/ColdTrick/owner_gatekeeper",
 		"issues": "https://github.com/ColdTrick/owner_gatekeeper/issues"
@@ -14,5 +14,8 @@
 	"require-dev": {
 		"coldtrick/sniffs": "dev-master",
 		"coldtrick/releases": "dev-master"
+	},
+	"conflict": {
+		"elgg/elgg": "<3.1"
 	}
 }

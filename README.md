@@ -1,6 +1,7 @@
 Owner gatekeeper
 ================
 
+![Elgg 3.1](https://img.shields.io/badge/Elgg-3.1-green.svg)
 [![Build Status](https://scrutinizer-ci.com/g/ColdTrick/owner_gatekeeper/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ColdTrick/owner_gatekeeper/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ColdTrick/owner_gatekeeper/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ColdTrick/owner_gatekeeper/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/coldtrick/owner_gatekeeper/v/stable.svg)](https://packagist.org/packages/coldtrick/owner_gatekeeper)
