@@ -23,14 +23,14 @@ class OwnerGatekeeperMiddleware {
 		}
 		
 		$user = elgg_get_logged_in_user_entity();
-		if ($user instanceof \ElggUser && $user->isAdmin()) {
-			// admins can see all
-			return;
-		}
-		
-		if ($user instanceof \ElggUser && $user->guid === $page_owner->guid) {
-			// can see own content
-			return;
+		if ($user instanceof \ElggUser) {
+			if ($user->isAdmin()) {
+				// admins can see all
+				return;
+			} elseif ($user->guid === $page_owner->guid) {
+				// can see own content
+				return;
+			}
 		}
 		
 		$site_url = elgg_get_site_url();
