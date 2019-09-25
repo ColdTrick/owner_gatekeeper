@@ -119,6 +119,12 @@ class OwnerGatekeeperMiddleware {
 	public static function register(\Elgg\Hook $hook) {
 		
 		$route_params = $hook->getValue();
+		
+		if (!elgg_extract('walled', $route_params, true)) {
+			// is a public page, so don't protect
+			return;
+		}
+		
 		$route_params['middleware'] = elgg_extract('middleware', $route_params, []);
 		$route_params['middleware'][] = static::class;
 		
